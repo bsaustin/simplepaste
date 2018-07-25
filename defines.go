@@ -1,23 +1,23 @@
 package simplepaste
 
-import(
+import (
 	"errors"
 )
 
-var(
+var (
 	PastePostingError = errors.New("Error while posting: pastebin.com is not available")
-	PasteGetError = errors.New("Error while getting: pastebin.com is not available")
-	PrivacyModError = errors.New("You can't send private paste without user_key!")
+	PasteGetError     = errors.New("Error while getting: pastebin.com is not available")
+	PrivacyModError   = errors.New("You can't send private paste without user_key!")
 )
 
 const (
-	Never       =  "N"
-	TenMinutues =  "10M"
-	Hour        =  "1H"
-	Day         =  "1D"
-	Week        =  "1W"
-	TwoWeeks    =  "2W"
-	Month       =  "1M"
+	Never       = "N"
+	TenMinutues = "10M"
+	Hour        = "1H"
+	Day         = "1D"
+	Week        = "1W"
+	TwoWeeks    = "2W"
+	Month       = "1M"
 
 	Public   = "0"
 	Unlisted = "1"
